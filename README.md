@@ -39,11 +39,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ---
 
-Claro, aquí tienes el árbol de directorios de tu proyecto y teX (Next.js) y una breve documentación de las clases y lo que hace tu proyecto:
+### Documentación del Proyecto Next.js
 
-### Árbol de Directorios del Proyecto
+Este proyecto es una aplicación web construida con Next.js, un framework de React que permite la creación de aplicaciones web modernas con renderizado del lado del servidor (SSR) y generación de sitios estáticos (SSG). A continuación, se proporciona una breve descripción de cada directorio y archivo en el proyecto, integrado con el árbol de directorios proporcionado.
 
-```plaintext
+```
 .
 ├── ./components
 ├── ./data
@@ -68,45 +68,34 @@ Claro, aquí tienes el árbol de directorios de tu proyecto y teX (Next.js) y un
     └── ./styles/not.module.scss
 ```
 
-### Documentación Breve del Proyecto
+#### 1. **`components/`**
+Este directorio contiene los componentes reutilizables de la aplicación. Los componentes son bloques de construcción fundamentales en una aplicación React, y aquí es donde se almacenan los componentes que se utilizan en varias partes de la aplicación.
 
-#### Estructura del Proyecto
+#### 2. **`data/`**
+Aquí se almacenan los archivos de datos estáticos o dinámicos que la aplicación puede necesitar. Esto podría incluir archivos JSON, CSV, o cualquier otro tipo de datos que la aplicación necesite consumir.
 
-- **`./components`**: Directorio para componentes reutilizables.
-- **`./data`**: Directorio para datos estáticos o lógica de datos.
-- **`./lib`**: Directorio para bibliotecas o utilidades personalizadas.
-  - **`./lib/prisma.ts`**: Archivo de configuración de Pr- **`./pages`**: Directorio para páginas de Next.js.
-  - **`./pages/404.tsx`**: Página de error 404 personalizada.
-  - **`./pages/_app.tsx`**: Archivo de configuración global de la aplicación.
-  - **`./pages/index.tsx`**: Página principal de la aplicación.
-- **`./prisma`**: Directorio para Prisma.
-  - **`./prisma/schema.prisma`**: Archivo de esquema de Prisma.
-- **`./public`**: Directorio para archivos estáticos (imágenes, iconos, etc.).
-  - **`./public/Default`**: Subdirectorio para archivos estáticos por defecto.
-  - **`./public/Efe.png`**: Imagen estática.
-- **`./styles`**: Directorio para estilos globales y módulos de estilos.
-  - **`./styles/global.css`**: Archivo de estilos globales.
-  - **`./styles/not.module.scss`**: Archivo de estilos SCSS modular.
+#### 3. **`lib/`**
+El directorio `lib/` contiene utilidades y funciones auxiliares que se utilizan en toda la aplicación. En este caso, `lib/prisma.ts` es un archivo que probablemente contiene la configuración y la conexión a la base de datos utilizando Prisma, un ORM (Object-Relational Mapping) para Node.js.
 
-#### Funcionalidad del Proyecto
+#### 4. **`pages/`**
+Este es uno de los directorios más importantes en una aplicación Next.js. Cada archivo dentro de `pages/` representa una ruta en la aplicación. Por ejemplo:
 
-1. **Página Principal (`index.tsx`)**:
-   - Renderiza el contenido principal de la aplicación.
-   - Puede incluir componentes y lógica de datos.
+- `404.tsx`: Define la página de error 404.
+- `_app.tsx`: Es el componente principal de la aplicación que envuelve todas las páginas. Aquí se pueden agregar proveedores de contexto, estilos globales, etc.
+- `index.tsx`: Es la página principal de la aplicación, que se muestra cuando se accede a la raíz del sitio (`/`).
 
-2. **Página de Error 404 (`404.tsx`)**:
-   - Muestra una página personalizada cuando una ruta no existe.
-   - Incluye un enlace para volver a la página principal.
+#### 5. **`prisma/`**
+Este directorio contiene la configuración de Prisma, un ORM para Node.js que facilita la interacción con la base de datos. El archivo `schema.prisma` define el esquema de la base de datos, incluyendo los modelos y relaciones.
 
-3. **Configuración Global de la Aplicación (`_app.tsx`)**:
-   - Proporciona personalizar la configuración global de la aplicación.
-   - Importa estilos globales y configura el cliente de Prisma.
+#### 6. **`public/`**
+El directorio `public/` es donde se almacenan los archivos estáticos que se sirven directamente al cliente. Esto incluye imágenes, archivos SVG, y otros recursos que no necesitan procesamiento adicional.
 
-4. **Prisma (`prisma.ts` y `schema.prisma`)**:
-   - Configura y utiliza Prisma para acceder a la base de datos.
-   - `prisma.ts` exporta el cliente de Prisma para uso en componentes y páginas.
+- `Default/`: Un subdirectorio dentro de `public/` que contiene varios archivos SVG, como `file.svg`, `globe.svg`, `next.svg`, `vercel.svg`, y `window.svg`.
+- `Efe.png`: Una imagen estática que se puede acceder directamente desde la URL `/Efe.png`.
 
-5. **Estilos Globales y Modulares (`global.css` y `not.module.scss`)**:
-   - `global.css` contiene estilos globales para la aplicación.
-   - `not.module.scss` contiene estilos SCSS modulares para componentes específicos.
+#### 7. **`styles/`**
+Este directorio contiene los archivos de estilos de la aplicación.
+
+- `global.css`: Un archivo CSS que define estilos globales que se aplican a toda la aplicación.
+- `not.module.scss`: Un archivo SCSS que probablemente se utiliza para estilos que no están modularizados (no son módulos CSS).
 
