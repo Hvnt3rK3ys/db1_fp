@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=PT+Mono&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	list-style: none;
+	scroll-behavior: smooth;
+	font-family: var(--font-base);
+}
+a,
+a:link {
+	font-family: inherit;
+	text-decoration: none;
+}
+html {
+	font-size: 62.5%;
+}
+:root {
+	--font-base: "PT Mono", monospace;
+	--primary-color: #407e31;
+	--primary-opacity: rgba(64, 126, 49, 0.45);
+	--secondary-color: #71b12c;
+	--secondary-opacity: rgba(141, 176, 132, 0.25);
+	--primary-compliment: #8a26bd;
+	--secondary-compliment: #c7283a;
+	--cards-slider1: linear-gradient(
+		65deg,
+		va(--primary-opacity) 0%,
+		var(--secondary-opacity) 100%
+	);
+	--cards-slider2: linear-gradient(
+		180deg,
+		var(--secondary-opacity) 0%,
+		var(--primary-opacity) 100%
+	);
+	--lightGray-color: #858585;
+	--gray-color: #454955;
+	--greenGray-color: #8db084;
+	--black-color: #0c0a0b;
+	--white-color: #edf2f8;
+	--s1-c: #a7c685;
+	--s2-c: #b5ff46;
+	--shadow: 0.1rem 0.2rem 0.8rem var(--s1-c) -0.1rem -0.2rem 0.8rem var(--s2-c);
+	--bg-gradient: linear-gradient(52deg, #0c0a0b 20%, #454955 50%, #0c0a0b 80%);
+}
+body {
+	max-width: 100vw;
+	min-height: 100vh;
+	background: var(--black-color);
+	color: var(--white-color);
+}

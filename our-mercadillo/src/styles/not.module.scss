@@ -1,0 +1,51 @@
+.mainNotFound {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: var(--white-color);
+	height: max(100vh);
+	width: max(100vw);
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding: 2vh 5vw;
+}
+.notNumber {
+	text-align: center;
+	font-size: 7rem;
+}
+.notAdvise {
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 4vh;
+}
+.imageNot {
+	width: max(60vw);
+	margin-top: 4vh;
+}
+@media screen and (min-width: 426px) and (max-width: 1023px) {
+	.notNumber {
+		font-size: 8.5rem;
+	}
+	.notAdvise {
+		font-size: 3rem;
+		margin-top: 2vh;
+	}
+	.imageNot {
+		width: max(20vw);
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 2560px) {
+	.notNumber {
+		font-size: 8.5rem;
+	}
+	.notAdvise {
+		font-size: 3rem;
+		margin-top: 2vh;
+	}
+	.imageNot {
+		width: max(20vw);
+		margin-top: 2vh;
+	}
+}
