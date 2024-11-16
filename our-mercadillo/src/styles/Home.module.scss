@@ -1,4 +1,3 @@
-// Home.module.scss
 .AdminLogin {
   width: 100%;
   min-height: 100vh;
@@ -23,6 +22,7 @@
 
     .logo {
       width: 40%;
+      max-width: 200px; // Ajusta según el tamaño deseado
     }
   }
 
@@ -171,6 +171,7 @@
 
       .logo {
         width: 100%;
+        max-width: 800px;
       }
     }
 

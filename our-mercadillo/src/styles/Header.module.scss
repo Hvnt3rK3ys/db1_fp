@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 10px;
+  height: 15vh;
+
+  @media screen and (min-width: 426px) {
+    height: 20vh;
+  }
+
+  .our_logo {
+    display: flex;
+    align-items: center;
+    width: 8vw;
+  }
+
+  .nav {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      li {
+        list-style: none;
+        color: var(--white-color);
+
+        a, button {
+          color: inherit;
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2560px) {
+  //some properties for DESKTOP
+}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "../styles/Home.module.scss";
 import { useRouter } from "next/router";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import Image from "next/image";
 import my_logo from "../public/Logo.png";
 
 const users = [
@@ -45,7 +46,7 @@ const HomePage = () => {
     <section className={styles.AdminLogin}>
       <div className={styles.contentWrapper}>
         <div className={styles.logoContainer}>
-          <img src={my_logo.src} alt="Logo" className={styles.logo} />
+          <Image src={my_logo} alt="Logo" className={styles.logo} />
         </div>
         <div className={styles.loginContainer}>
           <h1>Iniciar Sesión</h1>
@@ -99,5 +100,4 @@ const HomePage = () => {
     </section>
   );
 };
-
 export default HomePage;

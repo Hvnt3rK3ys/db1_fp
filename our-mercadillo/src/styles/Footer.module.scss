@@ -1,0 +1,16 @@
+//Mobile First Approach
+.footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+}
+@media screen and (min-width: 426px) and (max-width: 1023px) {
+	//some properties for TABLET
+}
+@media screen and (min-width: 1024px) and (max-width: 2560px) {
+  //some properties for DESKTOP
+}

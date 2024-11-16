@@ -1,7 +1,64 @@
-//Mobile First Approach
-@media screen and (min-width: 426px) and (max-width: 1023px) {
-	//some properties for TABLET
+// Mobile First Approach
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100vw; // Asegura que no supere el ancho de la ventana
+  margin: 0 auto;
+  overflow-x: hidden; // Evita que el contenido se desborde horizontalmente
+
+  .content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+
+    h1 {
+      grid-column: 1 / -1;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .entities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      grid-auto-flow: dense; // Distribuye las tarjetas de manera inteligente
+
+      .entityCard {
+        background-color: var(--gray-color);
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        color: var(--white-color);
+        font-size: 1.2rem;
+      }
+    }
+  }
 }
+
+@media screen and (min-width: 426px) and (max-width: 1023px) {
+  .dashboard {
+    .content {
+      grid-template-columns: repeat(2, minmax(200px, 1fr)); // Máximo 2 columnas en tablet
+    }
+
+    .entities {
+      grid-template-columns: repeat(2, minmax(200px, 1fr)); // Máximo 2 columnas en tablet
+    }
+  }
+}
+
 @media screen and (min-width: 1024px) and (max-width: 2560px) {
-  //some properties for DESKTOP
+  .dashboard {
+    .content {
+      grid-template-columns: repeat(3, minmax(300px, 1fr)); // Máximo 3 columnas en desktop
+    }
+
+    .entities {
+      grid-template-columns: repeat(3, minmax(300px, 1fr)); // Máximo 3 columnas en desktop
+    }
+  }
 }
