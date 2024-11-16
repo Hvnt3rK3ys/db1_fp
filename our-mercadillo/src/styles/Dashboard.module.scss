@@ -25,7 +25,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
-      grid-auto-flow: dense; // Distribuye las tarjetas de manera inteligente
+      grid-auto-flow: column dense; // Distribuye las tarjetas de manera inteligente
 
       .entityCard {
         background-color: var(--gray-color);
@@ -54,11 +54,12 @@
 @media screen and (min-width: 1024px) and (max-width: 2560px) {
   .dashboard {
     .content {
-      grid-template-columns: repeat(3, minmax(300px, 1fr)); // Máximo 3 columnas en desktop
+      grid-template-columns: repeat(1, minmax(300px, 1fr)); // Máximo 6 columnas en desktop
     }
 
     .entities {
-      grid-template-columns: repeat(3, minmax(300px, 1fr)); // Máximo 3 columnas en desktop
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+      grid-template-rows: repeat(2, minmax(200px, 1fr)); // Máximo 2 columnas en desktop
     }
   }
 }
