@@ -6,8 +6,8 @@
   width: 100%;
   max-width: 100vw; // Asegura que no supere el ancho de la ventana
   margin: 0 auto;
-  overflow-x: hidden; // Evita que el contenido se desborde horizontalmente
-
+  //overflow-x: hidden; // Evita que el contenido se desborde horizontalmente
+  overflow: hidden;
   .content {
     flex: 1;
     display: grid;
@@ -54,12 +54,14 @@
 @media screen and (min-width: 1024px) and (max-width: 2560px) {
   .dashboard {
     .content {
-      grid-template-columns: repeat(1, minmax(300px, 1fr)); // Máximo 6 columnas en desktop
+      grid-template-columns: repeat(1, minmax(100px, 1fr));
+      max-height: 100px; // Máximo 6 columnas en desktop
     }
 
     .entities {
-      grid-template-columns: repeat(2, minmax(300px, 1fr));
-      grid-template-rows: repeat(2, minmax(200px, 1fr)); // Máximo 2 columnas en desktop
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+      grid-template-rows: repeat(2, minmax(200px, 1fr));
+      align-items: safe;
     }
   }
 }
