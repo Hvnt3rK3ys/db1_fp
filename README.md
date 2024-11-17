@@ -1,3 +1,8 @@
+[![Watch the video](https://raw.githubusercontent.com/yourusername/yourrepository/main/assets/thumbnail.jpg)](https://raw.githubusercontent.com/yourusername/yourrepository/main/assets/video.mp4)
+
+[![How To Hide Mouse Cursor While Typing In Windows 10/11 Tutorial](https://img.youtube.com/vi/axaf1ZdVC-s&ab_channel=MDTechVideos/0.jpg)](https://www.youtube.com/watch?v=axaf1ZdVC-s&ab_channel=MDTechVideos)
+
+
 ### Documentación del Proyecto Next.js
 
 Este proyecto es una aplicación web construida con Next.js, un framework de React que permite la creación de aplicaciones web modernas con renderizado del lado del servidor (SSR) y generación de sitios estáticos (SSG). A continuación, se proporciona una breve descripción de cada directorio y archivo en el proyecto, integrado con el árbol de directorios proporcionado.
