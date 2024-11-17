@@ -1,0 +1,41 @@
+.globalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100vw;
+  height: 100vh;
+  border: 1px solid white;
+}  
+
+
+.tableHeader {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.globalTable{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.tableCell {
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
