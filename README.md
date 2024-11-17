@@ -1,12 +1,3 @@
-[![Watch the video](https://raw.githubusercontent.com/Hvnt3rK3ys/db1_fp/main/testimage.jpg)](https://raw.githubusercontent.com/Hvnt3rK3ys/db1_fp/main/testvideo.mp4)
-
-
-https://github.com/user-attachments/assets/32812620-aa35-4cc9-aa40-f5c2b3621409
-
-
-[![Watch the video](https://img.youtube.com/vi/_5tFXJQIzi4/0.jpg)](https://www.youtube.com/watch?v=_5tFXJQIzi4)
-
-
 ### Documentación del Proyecto Next.js
 
 Este proyecto es una aplicación web construida con Next.js, un framework de React que permite la creación de aplicaciones web modernas con renderizado del lado del servidor (SSR) y generación de sitios estáticos (SSG). A continuación, se proporciona una breve descripción de cada directorio y archivo en el proyecto, integrado con el árbol de directorios proporcionado.
