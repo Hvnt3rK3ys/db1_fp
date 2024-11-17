@@ -50,6 +50,12 @@
         color: var(--white-color);
         text-decoration: none;
         font-size: large;
+
+        &:hover {
+          padding: .8rem;
+          border: 0.2rem solid var(--white-color);
+          background-color: var(--secondary-color); 
+        }
       }
     }
   }

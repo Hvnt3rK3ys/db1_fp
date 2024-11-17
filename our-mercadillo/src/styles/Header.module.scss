@@ -23,6 +23,7 @@
       gap: 20px;
 
       li {
+        font-size: 1.5rem;
         list-style: none;
         color: var(--white-color);
 
@@ -31,11 +32,20 @@
           background: none;
           border: none;
           cursor: pointer;
+
+          &:hover {
+            border: .2rem solid var(--white-color); 
+            padding: .8rem;
+            background-color: var(--primary-color);
+          }
         }
 
-        button:hover {
-          background-color: red;
-          font-size: 14px;
+        &.logout {
+          background-color: var(--secondary-compliment); 
+
+          &:hover {
+            background-color: var(--primary-compliment); 
+          }
         }
       }
     }
