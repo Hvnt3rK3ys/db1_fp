@@ -153,3 +153,5 @@ Los estilos modulares (`.module.scss`) se asocian a componentes o páginas espec
 4. **Relaciones:** 
    - Las tablas relacionadas (e.g., `Producto_has_Factura`) gestionan sus relaciones en formularios o tablas específicas.
 
+### **Video Funcionamiento Aplicación**
+- https://www.youtube.com/watch?v=UCiclZ6KN2s
