@@ -1,4 +1,4 @@
-[![Watch the video](https://raw.githubusercontent.com/yourusername/yourrepository/main/assets/thumbnail.jpg)](https://raw.githubusercontent.com/yourusername/yourrepository/main/assets/video.mp4)
+[![Watch the video](https://raw.githubusercontent.com/Hvnt3rK3ys/db1_fp/main/assets/thumbnail.jpg)](https://raw.githubusercontent.com/Hvnt3rK3ys/db1_fp/main/How To Hide Mouse Cursor While Typing In Windows 10_11 [Tutorial].mp4)
 
 [![Watch the video](https://img.youtube.com/vi/_5tFXJQIzi4/0.jpg)](https://www.youtube.com/watch?v=_5tFXJQIzi4)
 
