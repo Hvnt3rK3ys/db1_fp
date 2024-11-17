@@ -1,6 +1,6 @@
 [![Watch the video](https://raw.githubusercontent.com/yourusername/yourrepository/main/assets/thumbnail.jpg)](https://raw.githubusercontent.com/yourusername/yourrepository/main/assets/video.mp4)
 
-[![How To Hide Mouse Cursor While Typing In Windows 10/11 Tutorial](https://img.youtube.com/vi/axaf1ZdVC-s&ab_channel=MDTechVideos/0.jpg)](https://www.youtube.com/watch?v=axaf1ZdVC-s&ab_channel=MDTechVideos)
+[![How To Hide Mouse Cursor While Typing In Windows 10/11 Tutorial](https://www.google.com/url?sa=i&url=https%3A%2F%2Fsoundcloud.com%2Fngrocosmco%2Fla-mano-de-metal-de-buda&psig=AOvVaw2vbqepaThFOUFb8JgRvsgK&ust=1731892892730000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMiDt_eZ4okDFQAAAAAdAAAAABAE)](https://www.youtube.com/watch?v=axaf1ZdVC-s&ab_channel=MDTechVideos)
 
 
 ### Documentación del Proyecto Next.js
