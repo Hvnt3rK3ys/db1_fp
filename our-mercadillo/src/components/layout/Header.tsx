@@ -3,11 +3,14 @@ import styles from '../../styles/Header.module.scss';
 import Image from 'next/image';
 import our_logo from '../../public/Logo.png';
 import { useRouter } from 'next/router';
+import { useAuth } from '../../context/AuthContext';
 
 const Header = () => {
   const router = useRouter();
+  const { user, logout } = useAuth();
+
   const handleLogout = () => {
-    // Perform logout logic here
+    logout();
     router.push('/');
   };
 
@@ -25,7 +28,7 @@ const Header = () => {
       <nav className={styles.nav}>
         <ul>
           <li><a href="/dashboard">Inicio</a></li>
-          <li>Usuario</li>
+          <li>{user}</li>
           <li><button onClick={handleLogout}>Cerrar Sesión</button></li>
         </ul>
       </nav>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Key } from "@react-types/shared";
 import styles from "../../styles/E_dynamic.module.scss";
 import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, getKeyValue, Spinner, Button } from "@nextui-org/react";
 import { useAsyncList } from "@react-stately/data";
@@ -8,7 +9,7 @@ const E_Cliente = () => {
   const [isLoading, setIsLoading] = React.useState(true);
 
   let list = useAsyncList({
-    async load({ signal, cursor }) {
+    async load({ signal, cursor }: { signal: AbortSignal; cursor?: string | null }) {
       if (cursor) {
         setPage((prev) => prev + 1);
       }
@@ -54,9 +55,9 @@ const E_Cliente = () => {
           items={list.items}
           loadingContent={<Spinner label="Loading..." />}
         >
-          {(item) => (
+          {(item: any) => (
             <TableRow key={item.name}>
-              {(columnKey) => <TableCell className={styles.tableCell}>{getKeyValue(item, columnKey)}</TableCell>}
+              {(columnKey: Key) => <TableCell className={styles.tableCell}>{getKeyValue(item, columnKey)}</TableCell>}
             </TableRow>
           )}
         </TableBody>

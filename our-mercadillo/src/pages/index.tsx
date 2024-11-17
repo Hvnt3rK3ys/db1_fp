@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import Image from "next/image";
 import my_logo from "../public/Logo.png";
+import { useAuth } from "../context/AuthContext";
 
 const users = [
   { username: "admin1", password: "admin123" },
@@ -17,6 +18,7 @@ const HomePage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
+  const { login } = useAuth();
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -31,6 +33,7 @@ const HomePage = () => {
     );
 
     if (user) {
+      login(user.username);
       router.push("/dashboard");
     } else {
       setError("Usuario o contraseña incorrectos");
