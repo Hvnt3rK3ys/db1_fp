@@ -9,6 +9,7 @@ import img_exhibidor from '../../public/covers/exhibidor.jpg';
 import img_factura from '../../public/covers/factura.jpg';
 import img_producto from '../../public/covers/producto.jpg';
 import img_proveedor from '../../public/covers/proveedor.jpg';
+import withAuth from '../../hoc/withAuth';
 
 const Dashboard = () => {
   return (
@@ -53,4 +54,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default withAuth(Dashboard);
