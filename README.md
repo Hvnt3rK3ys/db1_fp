@@ -1,5 +1,8 @@
 ## Relational Database Documentation
-
+### Consult the required queries in this file 
+➡➡➡
+[Report_Queries.sql](Report_Queries.sql)
+⬅⬅⬅ 
 ### Overview
 This relational database is designed to manage various entities such as `Bodega`, `Cliente`, `Empleado`, `Exhibidores`, `Factura`, `Producto`, `Proveedor`, and their relationships. The database schema ensures data integrity through the use of primary and foreign keys.
 
