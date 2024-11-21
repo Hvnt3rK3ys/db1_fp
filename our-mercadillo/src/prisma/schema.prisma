@@ -10,8 +10,8 @@ generator client {
 
 datasource db {
   provider = "mysql"
-//  url      = env("db-mysql-nyc3-30243-do-user-15477752-0.i.db.ondigitalocean.com://doadmin:AVNS__3KJfGG88sE4dAEigl_@localhost:25060/defaultdb")
-  url      = env("DATABASE_URL")
+  url = "mysql://usuario:clave@localhost:3306/defaultdb"
+
 }
 
 
