@@ -22,4 +22,4 @@ async function testDbConnection() {
   }
 }
 
-testDbConnection();
+module.exports = testDbConnection; // Exportar la función para usarla en otros archivos

@@ -1,31 +1,33 @@
+'use client';
+
 import React, { useState, useEffect } from "react";
 
 const E_Bodega = () => {
-  const [records, setRecords] = useState<any[]>([]);
+  interface Post {
+    post: string;
+  }
 
-  const fetchRecords = async () => {
-    try {
-      const response = await fetch('/api/fetchRecords');
-      const data = await response.json();
-      setRecords(data);
-    } catch (error) {
-      console.error('Error fetching records:', error);
-    }
-  };
-
+  const [posts, setPosts] = useState<Post[]>([]);
   useEffect(() => {
-    fetchRecords();
+    const fetchData = async () => {
+      try {
+        const response = await fetch("../../api/posts/Route.tsx");
+        const data = await response.json();
+        setPosts(data.posts);
+        console.log(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchData();
   }, []);
-
+  
   return (
     <div>
       <h1>E_Bodega</h1>
-      <button onClick={fetchRecords}>Fetch Records</button>
-      <ul>
-        {records.map((record, index) => (
-          <li key={index}>{JSON.stringify(record)}</li>
-        ))}
-      </ul>
+      {posts.map(post => (
+        <section>{post.post}</section>
+      ))}
     </div>
   );
 };
