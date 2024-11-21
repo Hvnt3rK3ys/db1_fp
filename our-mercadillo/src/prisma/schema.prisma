@@ -10,5 +10,74 @@ generator client {
 
 datasource db {
   provider = "mysql"
+//  url      = env("db-mysql-nyc3-30243-do-user-15477752-0.i.db.ondigitalocean.com://doadmin:AVNS__3KJfGG88sE4dAEigl_@localhost:25060/defaultdb")
   url      = env("DATABASE_URL")
+}
+
+
+model Bodega {
+  idBodega      Int    @id @default(autoincrement())
+  capacidad     String
+  producto_tipo String
+}
+
+model Cliente {
+  idCliente Int    @id @default(autoincrement())
+  nombre    String
+  factura   String
+}
+
+model Empleado {
+  idEmpleado Int    @id @default(autoincrement())
+  nombre     String
+  cargo      String
+}
+
+model Exhibidores {
+  idExhibidores Int    @id @default(autoincrement())
+  producto_tipo String
+  ubicacion     String
+  Bodega_idBodega Int
+}
+
+model Factura {
+  idFactura          Int      @id @default(autoincrement())
+  fecha              DateTime
+  total              Float
+  Cliente_idCliente  Int
+  Empleado_idEmpleado Int
+}
+
+model Producto {
+  idProducto      Int    @id @default(autoincrement())
+  nombre          String
+  precio          Float
+  cantidad        Int
+  Bodega_idBodega Int
+}
+
+model Producto_has_Exhibidores {
+  Producto_idProducto      Int
+  Producto_Bodega_idBodega Int
+  Exhibidores_idExhibidores Int
+  Exhibidores_Bodega_idBodega Int
+
+  @@id([Producto_idProducto, Producto_Bodega_idBodega, Exhibidores_idExhibidores, Exhibidores_Bodega_idBodega])
+}
+
+model Producto_has_Factura {
+  Producto_idProducto      Int
+  Producto_Bodega_idBodega Int
+  Factura_idFactura        Int
+  Factura_Cliente_idCliente Int
+  Factura_Empleado_idEmpleado Int
+
+  @@id([Producto_idProducto, Producto_Bodega_idBodega, Factura_idFactura, Factura_Cliente_idCliente, Factura_Empleado_idEmpleado])
+}
+
+model Proveedor {
+  idProveedor     Int    @id @default(autoincrement())
+  nombre          String
+  contacto        String
+  Bodega_idBodega Int
 }
