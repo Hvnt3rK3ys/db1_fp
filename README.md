@@ -23,6 +23,10 @@ This relational database is designed to manage various entities such as `Bodega`
 ### Database Diagram
 ![Database Diagram](diagram.png)
 
+# Video Demostración de la Base de Datos
+[![Watch the video](cover.jpg)](Data.mp4)
+.Debe darle click a la imagen
+
 ### Tables and Relationships
 
 - **Bodega**: Stores information about storage locations.
