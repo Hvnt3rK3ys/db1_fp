@@ -104,6 +104,17 @@ La arquitectura a 3 capas con microservicios es una solución óptima para este 
 3. **CRUDs:**
    - Cada tabla tiene su página (`E_Bodega.tsx`, etc.) con una tabla (`Table.tsx`) para datos y botones para interactuar con ellos.
    - Crear/editar registros abre un modal con un formulario personalizado.
+  
+Bodega: http://localhost:3000/api/bodega
+Cliente: http://localhost:3000/api/cliente
+Empleado: http://localhost:3000/api/empleado
+Exhibidores: http://localhost:3000/api/exhibidores
+Factura: http://localhost:3000/api/factura
+Producto: http://localhost:3000/api/producto
+Proveedor: http://localhost:3000/api/proveedor
+
+
+    
 
 4. **Relaciones:**
    - Las tablas relacionadas (e.g., `Producto_has_Factura`) gestionan sus relaciones en formularios o tablas específicas.
