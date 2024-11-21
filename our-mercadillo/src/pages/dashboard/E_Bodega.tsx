@@ -1,34 +1,32 @@
-'use client';
-
-import React, { useState, useEffect } from "react";
+import React, { useState } from 'react';
+import { fetchData } from '../services/apiServices';
 
 const E_Bodega = () => {
-  interface Post {
-    post: string;
-  }
+  const [result, setResult] = useState(null);
+  const [error, setError] = useState(null);
 
-  const [posts, setPosts] = useState<Post[]>([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("../../api/posts/Route.tsx");
-        const data = await response.json();
-        setPosts(data.posts);
-        console.log(data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchData();
-  }, []);
-  
+  const handleFetchData = async () => {
+    const param = 'test';
+    const someField = 'testValue';
+
+    const response = await fetchData(param, someField);
+
+    if (response.success) {
+      setResult(response.unique_producto_tipos);
+      setError(null);
+    } else {
+      setError(response.error);
+      setResult(null);
+    }
+  };
+
   return (
-    <div>
-      <h1>E_Bodega</h1>
-      {posts.map(post => (
-        <section>{post.post}</section>
-      ))}
-    </div>
+    <section>
+      <h2>Estadísticas de la Bodega</h2>
+      <button onClick={handleFetchData}>Obtener Estadísticas</button>
+      {result !== null && <p>Resultados de la consulta: {result}</p>}
+      {error !== null && <p>Error al obtener los datos: {error}</p>}
+    </section>
   );
 };
 
