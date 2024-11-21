@@ -3,6 +3,16 @@
 ➡➡➡
 [Report_Queries.sql](Report_Queries.sql)
 ⬅⬅⬅ 
+
+## The reports
+### 1. First Report
+![DO](ch1.png)
+[🤓👆 Data reported 🤓👆](Report1.json)
+### 2. Second Report
+![DO](Ch2.jpg)
+[🤓👆 Data reported 🤓👆](Report2.json)
+
+
 ### Overview
 This relational database is designed to manage various entities such as `Bodega`, `Cliente`, `Empleado`, `Exhibidores`, `Factura`, `Producto`, `Proveedor`, and their relationships. The database schema ensures data integrity through the use of primary and foreign keys.
 
